@@ -1,0 +1,13 @@
+@import "~/.config/rofi/config.rasi"
+
+element-icon {
+    size: 150px;
+}
+
+element-text {
+    enabled: false;
+}
+
+listview {
+    layout:                      horizontal;
+    }

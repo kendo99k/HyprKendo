@@ -1,0 +1,25 @@
+#!/bin/bash
+
+WALLDIR="$HOME/wallpapers"
+
+selected=$(
+  find "$WALLDIR" -type f \( \
+      -iname "*.jpg" -o \
+      -iname "*.jpeg" -o \
+      -iname "*.png" -o \
+      -iname "*.webp" \
+  \) | sort | while read -r img; do
+        printf "%s\0icon\x1f%s\n" "$img" "$img"
+      done |
+      rofi -dmenu -i -show-icons \
+           -theme ~/.config/rofi/wallpapers.rasi \
+           -p "wallpapers"
+)
+
+[ -z "$selected" ] && exit 0
+
+matugen image "$selected" \
+  -t scheme-vibrant \
+  -m dark \
+  -c ~/.config/matugen/hypr.toml
+

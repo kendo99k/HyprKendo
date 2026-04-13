@@ -1,0 +1,9 @@
+* {
+    background:     {{ colors.on_primary.default.rgba | set_alpha: 0.8 }};
+    background-alt: {{ colors.on_primary_fixed.default.rgba | set_alpha: 0.2 }};
+    foreground:     {{ colors.on_surface.default.rgba }};
+    selected:       {{ colors.primary.default.rgba }};
+    active:         {{ colors.primary_fixed_dim.default.rgba }};
+    urgent:         {{ colors.primary_container.default.rgba }};
+}
+

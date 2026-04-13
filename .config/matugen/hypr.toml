@@ -1,0 +1,38 @@
+[config.wallpaper]
+set = true
+
+command = "awww img {{ image }} --transition-type center"
+
+[templates.colors]
+input_path = '~/.config/matugen/templates/colors.txt'
+output_path = '~/.config/matugen/colors/colors.txt'
+
+[templates.sequences]
+input_path = '~/.config/matugen/templates/sequences.txt'
+output_path = '~/.config/matugen/colors/sequences.txt'
+post_hook = "~/.config/matugen/scripts/apply_sequences.sh"
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-3.0/gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-4.0/gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.kdeglobals]
+input_path = '~/.config/matugen/templates/kdeglobals'
+output_path = '~/.config/kdeglobals'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hypr.conf'
+output_path = '~/.config/hypr/hyprland/colors.conf'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi.rasi'
+output_path = '~/.config/matugen/colors/colors.rasi'
+
+[templates.css]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/matugen/colors/colors.css'
+post_hook = '~/.config/hypr/hyprland/scripts/reload.sh'

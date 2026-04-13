@@ -1,0 +1,83 @@
+{
+    "position": "top",
+    "margin-top": 15,
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces",
+        "battery",
+        "tray",
+        "pulseaudio",
+        "custom/notification",
+        "custom/cava"
+    ],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": 5, // 5 workspaces by default on every monitor
+            "HDMI-A-1": 3 // but only three on HDMI-A-1
+        }
+    },
+    "custom/cava": {
+        "exec": "$HOME/.config/waybar/scripts/cava.sh",
+        "format": "{}"
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "max-length": 25
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "max-length": 25
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 100,
+        "format": "{icon}",
+	"on-click": "pavucontrol",
+        "format-bluetooth": "{icon}",
+        "format-icons": [
+            "",
+            "",
+            " "
+        ],
+        "nospacing": 1,
+        "format-muted": " "
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "format": "<span size='16pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫 ",
+            "none": "󰂜 ",
+            "dnd-notification": "󰂠 ",
+            "dnd-none": "󰪓 ",
+            "inhibited-notification": "󰂛 ",
+            "inhibited-none": "󰪑 ",
+            "dnd-inhibited-notification": "󰂛 ",
+            "dnd-inhibited-none": "󰪑 "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+}

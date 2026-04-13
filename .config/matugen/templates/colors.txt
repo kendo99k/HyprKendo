@@ -1,0 +1,8 @@
+/*
+* Colors
+* Generated with Matugen
+*/
+$image = {{image}}
+<* for name, value in colors *>
+    {{name}} {{value.default.hex}};
+<* endfor *>

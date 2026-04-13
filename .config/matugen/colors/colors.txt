@@ -1,0 +1,106 @@
+/*
+* Colors
+* Generated with Matugen
+*/
+$image = /home/jared/Wallpapers/xelyx3.jpg
+
+    background #0d141c;
+
+    error #ffb4ab;
+
+    error_container #93000a;
+
+    inverse_on_surface #2b3139;
+
+    inverse_primary #0061a4;
+
+    inverse_surface #dde3ee;
+
+    on_background #dde3ee;
+
+    on_error #690005;
+
+    on_error_container #ffdad6;
+
+    on_primary #003258;
+
+    on_primary_container #d1e4ff;
+
+    on_primary_fixed #001d36;
+
+    on_primary_fixed_variant #00497d;
+
+    on_secondary #24304d;
+
+    on_secondary_container #d9e2ff;
+
+    on_secondary_fixed #0e1b37;
+
+    on_secondary_fixed_variant #3a4664;
+
+    on_surface #dde3ee;
+
+    on_surface_variant #c1c7d2;
+
+    on_tertiary #2a2c59;
+
+    on_tertiary_container #e1e0ff;
+
+    on_tertiary_fixed #141643;
+
+    on_tertiary_fixed_variant #404271;
+
+    outline #8b919b;
+
+    outline_variant #414750;
+
+    primary #9ecaff;
+
+    primary_container #00497d;
+
+    primary_fixed #d1e4ff;
+
+    primary_fixed_dim #9ecaff;
+
+    scrim #000000;
+
+    secondary #bac6ea;
+
+    secondary_container #3a4664;
+
+    secondary_fixed #d9e2ff;
+
+    secondary_fixed_dim #bac6ea;
+
+    shadow #000000;
+
+    source_color #7da3d1;
+
+    surface #0d141c;
+
+    surface_bright #333a42;
+
+    surface_container #1a2028;
+
+    surface_container_high #242a33;
+
+    surface_container_highest #2f353e;
+
+    surface_container_low #161c24;
+
+    surface_container_lowest #080f16;
+
+    surface_dim #0d141c;
+
+    surface_tint #9ecaff;
+
+    surface_variant #414750;
+
+    tertiary #c1c2fa;
+
+    tertiary_container #404271;
+
+    tertiary_fixed #e1e0ff;
+
+    tertiary_fixed_dim #c1c2fa;
+
