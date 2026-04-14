@@ -1,4 +1,4 @@
-# 🧊 Hyprland Dotfiles
+# 🧊 HyprKendo
 
 Minimal and clean **Hyprland** setup for Arch Linux, focused on performance, aesthetics, and dynamic theming with **Matugen**.
 
